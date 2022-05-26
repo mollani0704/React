@@ -1,13 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Input from './components/input';
-// import Counter from './components/counter';
+
+import { createGlobalStyle } from 'styled-components';
+import TodoTemplate from './components/todoTemplate';
+import TodoHead from './components/todoHead';
+import TodoList from './components/todoList';
+
+const GlobalStyle = createGlobalStyle`
+    body {
+        background: #e9ecef;
+    }
+`;
 
 function App() {
     return (
         <div className="App">
-            {/* <Counter /> */}
-            {/* <Input /> */}
+            <GlobalStyle />
+            <TodoTemplate>
+                <TodoHead />
+                <TodoList />
+            </TodoTemplate>
         </div>
     );
 }

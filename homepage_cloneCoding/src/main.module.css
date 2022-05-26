@@ -1,0 +1,12 @@
+.mainImg {
+    width: 100%;
+    height: 120px;
+    background-color: brown;
+}
+
+.contents {
+    margin: 0 auto;
+    width: 1200px;
+    height: 3000px;
+    background-color: burlywood;
+}
