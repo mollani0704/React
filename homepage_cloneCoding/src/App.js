@@ -1,15 +1,18 @@
 import logo from './logo.svg';
 import { Route, Link } from 'react-router-dom';
 import Main from './main';
-import About from './components/about/about';
-import Product from './components/product/product';
-import Community from './components/community/community';
-import Recruit from './components/recruit/recruit';
+
 import News from './components/news/news';
 import ShoppingList from './components/shoppingList/shoppingList';
 import WishList from './components/wishList/wishList';
 import Login from './components/login/login';
 import Store from './components/store/store';
+
+import New from './components/new/new';
+import Men from './components/men/men';
+import Women from './components/women/women';
+import Kids from './components/kids/kids';
+import Customs from './components/customs/customs';
 
 import './App.css';
 
@@ -19,44 +22,134 @@ function App() {
             <div className="header">
                 <div className="header_in">
                     <div className="logo">
-                        <h1>LOGO</h1>
+                        <h2>
+                            <Link
+                                to="/"
+                                style={{
+                                    color: 'black',
+                                    textDecoration: 'none',
+                                }}
+                            >
+                                LOGO
+                            </Link>
+                        </h2>
                     </div>
                     <div className="nav">
                         <div className="login_menu">
                             <ul>
                                 <li>
-                                    <Link to="/news">Vans News</Link>
+                                    <Link
+                                        to="/news"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        Vans News
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/shoppingList">장바구니</Link>
+                                    <Link
+                                        to="/shoppingList"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        장바구니
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/wishList">위시리스트</Link>
+                                    <Link
+                                        to="/wishList"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        위시리스트
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/login">로그인</Link>
+                                    <Link
+                                        to="/login"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        로그인
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/store">매장찾기</Link>
+                                    <Link
+                                        to="/store"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        매장찾기
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="menu">
                             <ul>
                                 <li>
-                                    <Link to="/">메인으로</Link>
+                                    <Link
+                                        to="/new"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        NEW
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/about">회사소개</Link>
+                                    <Link
+                                        to="/men"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        MEN
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/product">제품소개</Link>
+                                    <Link
+                                        to="/women"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        WOMEN
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/community">커뮤니티</Link>
+                                    <Link
+                                        to="/kids"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        KIDS
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/recruit">인재채용</Link>
+                                    <Link
+                                        to="/customs"
+                                        style={{
+                                            color: 'black',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        CUSTOMS
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -64,6 +157,7 @@ function App() {
                 </div>
             </div>
             <div style={{ width: '100%', height: 'auto', background: '#ccc' }}>
+                <Route path="/" exact={true} component={Main} />
                 <Route path="/news" exact={true} component={News} />
                 <Route
                     path="/shoppingList"
@@ -73,11 +167,11 @@ function App() {
                 <Route path="/wishList" exact={true} component={WishList} />
                 <Route path="/login" exact={true} component={Login} />
                 <Route path="/store" exact={true} component={Store} />
-                <Route path="/" exact={true} component={Main} />
-                <Route path="/about" exact={true} component={About} />
-                <Route path="/product" exact={true} component={Product} />
-                <Route path="/community" exact={true} component={Community} />
-                <Route path="/recruit" exact={true} component={Recruit} />
+                <Route path="/new" exact={true} component={New} />
+                <Route path="/men" exact={true} component={Men} />
+                <Route path="/women" exact={true} component={Women} />
+                <Route path="/kids" exact={true} component={Kids} />
+                <Route path="/customs" exact={true} component={Customs} />
             </div>
         </>
     );

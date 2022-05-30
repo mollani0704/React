@@ -2,14 +2,14 @@ import React from 'react';
 import Footer from '../../footer';
 import BlackBar from '../blackBar/blackBar';
 
-const Login = () => {
+const New = () => {
     return (
         <>
             <BlackBar />
-            <div>login</div>
+            <div>New</div>
             <Footer />
         </>
     );
 };
 
-export default Login;
+export default New;

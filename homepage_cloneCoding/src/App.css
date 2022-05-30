@@ -7,7 +7,7 @@
 }
 
 .header_in {
-    width: 1200px;
+    width: 1500px;
     height: 120px;
     background-color: yellowgreen;
     display: flex;
@@ -48,6 +48,10 @@
     justify-content: space-around;
 }
 
+.header_in .nav .login_menu ul li {
+    text-decoration: none;
+}
+
 .header_in .nav .menu {
     width: 800px;
     height: 120px;
@@ -62,4 +66,8 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+}
+
+.header_in .nav .menu ul li {
+    text-decoration: none;
 }

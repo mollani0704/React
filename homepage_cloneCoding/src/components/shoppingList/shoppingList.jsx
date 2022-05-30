@@ -1,7 +1,15 @@
 import React from 'react';
+import Footer from '../../footer';
+import BlackBar from '../blackBar/blackBar';
 
 const ShoppingList = () => {
-    return <div>ShoppingList</div>;
+    return (
+        <>
+            <BlackBar />
+            <div>ShoppingList</div>
+            <Footer />
+        </>
+    );
 };
 
 export default ShoppingList;

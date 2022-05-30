@@ -1,7 +1,15 @@
 import React from 'react';
+import Footer from '../../footer';
+import BlackBar from '../blackBar/blackBar';
 
 const Store = () => {
-    return <div>store</div>;
+    return (
+        <>
+            <BlackBar />
+            <div>store</div>
+            <Footer />
+        </>
+    );
 };
 
 export default Store;
