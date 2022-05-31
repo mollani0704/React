@@ -1,0 +1,19 @@
+.container {
+    width: 1500px;
+    height: 500px;
+    background-color: #e1bee7;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.items {
+    margin-bottom: 20px;
+}

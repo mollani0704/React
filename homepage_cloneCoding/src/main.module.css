@@ -1,7 +1,13 @@
-.mainImg {
+.main_container {
     width: 1500px;
-    height: 450px;
+    height: 550px;
     background-color: brown;
+    margin: auto;
+}
+
+.main_Img {
+    width: 1500px;
+    height: 550px;
     margin: auto;
 }
 
