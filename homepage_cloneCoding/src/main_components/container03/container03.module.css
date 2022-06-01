@@ -3,4 +3,7 @@
     height: 450px;
     background-color: #7986cb;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
