@@ -1,0 +1,10 @@
+.item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    color: #40c4ff;
+    text-decoration: none;
+}

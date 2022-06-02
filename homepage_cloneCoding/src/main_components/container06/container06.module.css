@@ -1,6 +1,23 @@
 .container {
     width: 1500px;
-    height: 1000px;
-    background-color: #ffee58;
+    height: 950px;
+    background-color: #e1bee7;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.items {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
