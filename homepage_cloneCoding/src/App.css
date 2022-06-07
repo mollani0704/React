@@ -23,6 +23,11 @@
     background-color: azure;
 }
 
+.header_in .logo .logoImg {
+    width: 200px;
+    height: 120px;
+}
+
 .header_in .nav {
     width: 1000px;
     height: 120px;

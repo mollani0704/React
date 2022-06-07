@@ -30,7 +30,10 @@ function App() {
                                     textDecoration: 'none',
                                 }}
                             >
-                                LOGO
+                                <img
+                                    className="logoImg"
+                                    src={require('./logo.png')}
+                                ></img>
                             </Link>
                         </h2>
                     </div>
