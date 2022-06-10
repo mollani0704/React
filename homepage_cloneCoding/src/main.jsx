@@ -8,17 +8,19 @@ import Container03 from './main_components/container03/container03';
 import Container04 from './main_components/container04/container04';
 import Container05 from './main_components/container05/container05';
 import Container06 from './main_components/container06/container06';
+import MainImg from './main_components/mainImg';
 
 const Main = () => {
     return (
         <>
             <BlackBar />
             <div className={styles.main_container}>
-                <img
+                {/* <img
                     className={styles.main_Img}
                     src={require('./Img/mainImg.jpg')}
                     alt=""
-                />
+                /> */}
+                <MainImg />
             </div>
             <div className={styles.contents}>
                 <Container01 />
