@@ -18,7 +18,7 @@ import './App.css';
 
 function App() {
     return (
-        <>
+        <div style={{ overflow: 'hidden' }}>
             <div className="header">
                 <div className="header_in">
                     <div className="logo">
@@ -46,9 +46,10 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '13px',
                                         }}
                                     >
-                                        Vans News
+                                        News
                                     </Link>
                                 </li>
                                 <li>
@@ -57,6 +58,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '13px',
                                         }}
                                     >
                                         장바구니
@@ -68,6 +70,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '13px',
                                         }}
                                     >
                                         위시리스트
@@ -79,6 +82,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '13px',
                                         }}
                                     >
                                         로그인
@@ -90,6 +94,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '13px',
                                         }}
                                     >
                                         매장찾기
@@ -105,6 +110,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '20px',
                                         }}
                                     >
                                         NEW
@@ -116,6 +122,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '20px',
                                         }}
                                     >
                                         MEN
@@ -127,6 +134,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '20px',
                                         }}
                                     >
                                         WOMEN
@@ -138,6 +146,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '20px',
                                         }}
                                     >
                                         KIDS
@@ -149,6 +158,7 @@ function App() {
                                         style={{
                                             color: 'black',
                                             textDecoration: 'none',
+                                            fontSize: '22px',
                                         }}
                                     >
                                         CUSTOMS
@@ -176,7 +186,7 @@ function App() {
                 <Route path="/kids" exact={true} component={Kids} />
                 <Route path="/customs" exact={true} component={Customs} />
             </div>
-        </>
+        </div>
     );
 }
 

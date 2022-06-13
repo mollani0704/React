@@ -23,36 +23,11 @@ const MainImg = () => {
     return (
         <div>
             <Slider {...settings}>
-                <div>
-                    <img
-                        className={styles.Img}
-                        src={require('../Img/mainImg.jpg')}
-                    />
-                </div>
-                <div>
-                    <img
-                        className={styles.Img}
-                        src={require('../Img/Img2.jpg')}
-                    />
-                </div>
-                <div>
-                    <img
-                        className={styles.Img}
-                        src={require('../Img/Img3.jpeg')}
-                    />
-                </div>
-                <div>
-                    <img
-                        className={styles.Img}
-                        src={require('../Img/Img4.jpg')}
-                    />
-                </div>
-                <div>
-                    <img
-                        className={styles.Img}
-                        src={require('../Img/Img5.jpg')}
-                    />
-                </div>
+                <div className={styles.mainImg}></div>
+                <div className={styles.img2}></div>
+                <div className={styles.img3}></div>
+                <div className={styles.img4}></div>
+                <div className={styles.img5}></div>
             </Slider>
         </div>
     );
