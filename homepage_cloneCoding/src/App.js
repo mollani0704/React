@@ -14,26 +14,23 @@ import Women from './components/women/women';
 import Kids from './components/kids/kids';
 import Customs from './components/customs/customs';
 
+import { MdKeyboardArrowDown } from 'react-icons/md';
+import { FiShoppingCart } from 'react-icons/fi';
+import { AiOutlineHeart } from 'react-icons/ai';
+import { IoMdPerson } from 'react-icons/io';
+import { GiPositionMarker } from 'react-icons/gi';
+
 import './App.css';
 
 function App() {
     return (
-        <div style={{ overflow: 'hidden' }}>
+        <div>
             <div className="header">
                 <div className="header_in">
                     <div className="logo">
                         <h2>
-                            <Link
-                                to="/"
-                                style={{
-                                    color: 'black',
-                                    textDecoration: 'none',
-                                }}
-                            >
-                                <img
-                                    className="logoImg"
-                                    src={require('./logo.png')}
-                                ></img>
+                            <Link to="/" className="link">
+                                <div className="logoImg"></div>
                             </Link>
                         </h2>
                     </div>
@@ -43,11 +40,7 @@ function App() {
                                 <li>
                                     <Link
                                         to="/news"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '13px',
-                                        }}
+                                        className="link--loginMenu"
                                     >
                                         News
                                     </Link>
@@ -55,48 +48,36 @@ function App() {
                                 <li>
                                     <Link
                                         to="/shoppingList"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '13px',
-                                        }}
+                                        className="link--loginMenu"
                                     >
+                                        <FiShoppingCart />
                                         장바구니
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         to="/wishList"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '13px',
-                                        }}
+                                        className="link--loginMenu"
                                     >
+                                        <AiOutlineHeart />
                                         위시리스트
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         to="/login"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '13px',
-                                        }}
+                                        className="link--loginMenu"
                                     >
+                                        <IoMdPerson />
                                         로그인
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
                                         to="/store"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '13px',
-                                        }}
+                                        className="link--loginMenu"
                                     >
+                                        <GiPositionMarker />
                                         매장찾기
                                     </Link>
                                 </li>
@@ -105,63 +86,33 @@ function App() {
                         <div className="menu">
                             <ul>
                                 <li>
-                                    <Link
-                                        to="/new"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '20px',
-                                        }}
-                                    >
+                                    <Link to="/new" className="link--menu">
                                         NEW
+                                        <MdKeyboardArrowDown />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link
-                                        to="/men"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '20px',
-                                        }}
-                                    >
+                                    <Link to="/men" className="link--menu">
                                         MEN
+                                        <MdKeyboardArrowDown />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link
-                                        to="/women"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '20px',
-                                        }}
-                                    >
+                                    <Link to="/women" className="link--menu">
                                         WOMEN
+                                        <MdKeyboardArrowDown />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link
-                                        to="/kids"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '20px',
-                                        }}
-                                    >
+                                    <Link to="/kids" className="link--menu">
                                         KIDS
+                                        <MdKeyboardArrowDown />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link
-                                        to="/customs"
-                                        style={{
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            fontSize: '22px',
-                                        }}
-                                    >
+                                    <Link to="/customs" className="link--menu">
                                         CUSTOMS
+                                        <MdKeyboardArrowDown />
                                     </Link>
                                 </li>
                             </ul>
