@@ -43,3 +43,80 @@ button {
     font-size: 2rem;
     color: darkred;
 }
+
+.navbar {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 30px;
+
+    background-color: bisque;
+}
+
+.navbar .nav-icon {
+    font-size: 40px;
+    color: green;
+}
+
+.navbar span {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.navbar .nav-count {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+
+    text-align: center;
+
+    border-radius: 50%;
+    font-size: 30px;
+
+    background-color: green;
+    color: white;
+}
+
+.habit-addForm {
+    padding: 15px 0 0 30px;
+}
+
+.habit-input {
+    width: 200px;
+    height: 30px;
+
+    font-size: 20px;
+}
+
+.habit-addBtn {
+    width: 60px;
+    height: 40px;
+
+    margin-left: 5px;
+    padding: 0 6px;
+
+    background-color: green;
+    color: white;
+
+    font-size: 20px;
+}
+
+.habit-list {
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.habit-resetBtn {
+    width: 80px;
+    height: 40px;
+    margin-left: 30px;
+
+    font-size: 15px;
+
+    background-color: green;
+    color: white;
+}
