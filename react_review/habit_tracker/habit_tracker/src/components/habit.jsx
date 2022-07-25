@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
-class Habit extends Component {
+class Habit extends PureComponent {
     handleIncremet = () => {
         // state 오브젝트 안에 있는 count를 증가 한뒤 state를 업데이트 해야 함.
         this.props.onIncrement(this.props.habit);
