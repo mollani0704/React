@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './video_item.module.css';
 
-const VideoItem = ({video: {snippet}}) => {
+const VideoItem = ({video: {snippet}, getId, id}) => {
+    const searchId = () => {
+        getId(id);
+    };
+
     return (
-        <li className={styles.container}>
+        <li className={styles.container} onClick={searchId}>
             <div className={styles.video}>
                 <img
                     className={styles.thumbnail}
